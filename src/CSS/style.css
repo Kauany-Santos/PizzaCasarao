@@ -54,9 +54,28 @@ html{
 
 .content .list-menu li a:hover{
     background-color: #3333;
-    border-bottom:4px solid #ffc506;
-    color: #ffc506;
+    border-bottom:4px solid #ffffff;
+    color: white;
 }
+
+.content .list-menu #Home a:hover{
+    background-color: #3333;
+    border-bottom:4px solid #008c45;
+    color: white;
+}
+
+.content .list-menu #Cardapio a:hover{
+    background-color: #3333;
+    border-bottom:4px solid white;
+    color: white;
+}
+
+.content .list-menu #destaque a:hover{
+    background-color: #3333;
+    border-bottom:4px solid #ff0606;
+    color: white;
+}
+
 
 /*primeira seção*/
 
@@ -122,6 +141,8 @@ html{
     width: 480px;
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Sobre Nós*/
@@ -257,6 +278,17 @@ html{
     width: 100%;
     height: 200px;
 }
+
+/*Localização*/
+
+.mapa {
+
+    background-color: #1f1e1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*Contatos*/
 .contatos{
