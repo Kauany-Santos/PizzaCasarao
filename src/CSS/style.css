@@ -24,7 +24,6 @@ html{
 .logo{
     width: 70px;
     height: auto;
-    cursor: pointer;
     display: flex;
     align-items: center;
 }
@@ -80,7 +79,7 @@ html{
 /*primeira seção*/
 
 .primeira-secao{
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/fundo.jpg);
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/fundoDeles.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -291,47 +290,64 @@ html{
 
 
 /*Contatos*/
-.contatos{
+.contatos {
     width: 100%;
     background-color: #1f1e1f;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    justify-content: space-between; 
     font-size: 1.8rem;
     color: white;
-    padding-bottom: 4rem;
-}
 
-.contatos h3{
-    font-size: 6rem;
+    padding: 2rem 2rem 4rem 4rem;
+   
+}
+.contatos h3 {
+    font-size: 2rem;
     margin-bottom: 3rem;
 }
-.contatos-secao{
-    width: 650px ;
+.contatos #colorH4{
+  color: #ffc506;
+}
+.contatos span {
+color: #e6e6e6;
+}
+
+
+.contatos-secao,
+.horario-secao {
+    width: 48%; /* Define que cada coluna ocupe cerca de metade do espaço */
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     font-size: 2rem;
 }
 
-.contatos-secao i{
+.contatos-secao i,
+.horario-secao i {
     margin-right: 1rem;
 }
 
-.contatos-secao div{
-    cursor:pointer;
+.contatos-secao h3 i,
+.horario-secao h3 i {
+    margin-right: 1rem;
+    color: #ffc506; /* Cor dos ícones */
+}
+
+.contatos-secao div,
+.horario-secao div {
+    cursor: pointer;
     transition: all 200ms ease-in;
 }
 
-.contatos-secao div:hover{
-    color: #ffc506;
+.contatos-secao div:hover,
+.horario-secao div:hover {
+    color: #ffc506; /* Efeito hover para os itens */
 }
-
 
 /*footer*/
 
 footer{
-    height: ;
+  
     background-color: black;
     color: white;
     font-size: 1.4rem;
