@@ -26,9 +26,9 @@
             <ul class="list-menu">
                 <li id="Home"><a href="#">Home</a></li>
                 <li id="Cardapio"><a href="#">Cardápio</a></li>
-                <li id="destaque"><a href="#produtos">Produtos</a></li>
+                <li id="destaque"><a href="#produtos">Destaques</a></li>
                 <li><a href="https://www.instagram.com/pizzacasarao/"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="https://l.instagram.com/?u=https%3A%2F%2Fcontate.me%2Fpizzacasaraodelivery%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaaZYKfI1QrADcKWPpcG9jWqJdWSHVzWqIZZuH7Y8Uunlf58L0RI40NklxY_aem_bQuW8os0wKRgnyf8Bu5KXQ&e=AT0CNpjiomGdGKH46o7HTKSzwG7aVKezvCOK0PAlEOsmyFacVvZ0QbMe_OUeFmL2QcsDRUyzif67yrLlQz8i7ZcC4OXJo2yNfzGlJQ"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="https://wa.me/p/8102089986495103/5512996847638"><i class="bi bi-whatsapp"></i></a></li>
             </ul>
         </nav>
         <div class="menu-toggle">
@@ -44,7 +44,9 @@
             <h2>As pizzas mais recomendadas</h2>
         </div>
         <div class="btn">
-            <button class="reservar">Ver Cardápio</button>
+            <a href="https://wa.me/p/8102089986495103/5512996847638">
+            <button class="reservar">Pedir</button>
+        </a>
       
         </div>
     </section>
@@ -65,32 +67,29 @@
 
 <!--- Nossos Produtos -->
 
-<section class="produtos" id="produtos">
-    <h2>Nossos Produtos</h2>
-    <div class="carrosel-produtos">
+<section class="destaques" id="destaques">
+    <h2>Destaques</h2>
+    <div class="carrosel-destaques">
        
         <div class="carrosel fade">
-            <div class="numeroCarrosel">1 / 2</div>
             <img src="./src/img/carneseca.png" style="width:100%">
-            <div class="texto">Caption Text</div>
+            <div class="texto">Pizza de Carne Seca</div>
           </div>
 
           <div class="carrosel fade">
-            <div class="numeroCarrosel">2 / 2</div>
-            <img src="./src/img/morangoduo.png" style="width:100%">
-            <div class="texto">Caption Text</div>
+            <img src="./src/img/frangocatupiry.png" style="width:100%">
+            <div class="texto">Pizza de Frango com Catupiry</div>
+          </div>
+
+          <div class="carrosel fade">
+            <img src="./src/img/pizzadoce.png" style="width:100%">
+            <div class="texto">Pizza de Chocolate de Morango</div>
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
 
 </section>
 <section class="contatos" id="contatos">
