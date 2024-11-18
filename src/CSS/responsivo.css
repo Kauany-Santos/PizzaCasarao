@@ -1,24 +1,27 @@
-@media(max-width:1200px){
-    .main{
+ @media (max-width: 1200px) {
+    .main {
         display: block;
+        
     }
-    .content{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 12%;
-        padding-left: 0px;
+
+    .sobre-nos img {
+        width: 600px;
+        margin-left: -2px;
     }
+
+    
 }
 
-@media(max-width:768px){
-    html{
-        font-size: 45%;
+@media (max-width: 980px) {
+   
+    html {
+        font-size: 50%;
     }
+    
+}
 
-    .content{
-        display: flex;
-        flex-direction: row;
+@media (max-width: 870px) {
+    .content {
         justify-content: space-between;
         padding: 0px 40px;
     }
@@ -29,35 +32,147 @@
 
     .um,
     .dois,
-    .tres{
-        width: 80%;
-        height: 2px;
+    .tres {
+        width: 100%;
+        height: 4px;
         background-color: white;
         margin: 6px auto;
-        transition-duration: 0.5s;
+        transition-duration: 0.5s ;
     }
 
-    .menu-toggle{
-        width:30px ;
+    .menu-toggle {
+        width: 40px;
         height: 30px;
+        
+
     }
 
-    .content.on{
-        position: fixed;
+    .content.on {
+        position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(30 , 31, 30, 0.8);
+        background-color: #1f1e1f;
         z-index: 10;
-        display: flex;    }
 
-    .itens-cardapio{
-        grid-template-columns: repeat(2,minmax(50px,350px));
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .itens-cardapio .info h4{
-        margin-left: 12rem;
+    .content.on .logo {
+        display: none;
     }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+        
+    }
+
+    .content.on .list-menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content.on .list-menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+        
+    }
+
+}
+
+
+@media (max-width: 720px) {
+    .conteudo-principal h1 {
+        width: 350px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 645px) {
+    .sobre-nos img {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .contentsobre p {
+        text-align: center;
+        width: 400px;
+     }
+
+     .btn {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .contatos-secao {
+       width: 200px;
+        
+    }
+    .conteudo-principal h2 {
+        width: 200px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 150px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    .conteudo-principal h1 {
+       font-size: 3rem;
+    }
+    .conteudo-principal h2 {
+       font-size: 2rem;
+    }
+
+
+    .sobre-nos img {
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .contentsobre p {
+        text-align: center;
+        width: 200px;
+     }
+
+    
 }
