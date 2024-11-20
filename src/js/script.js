@@ -36,3 +36,25 @@ function showSlides(n) {
     
 }
 
+//Cardapio//
+
+function openPizzas(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, botao;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    botao = document.getElementsByClassName("botao");
+    for (i = 0; i < botao.length; i++) {
+      botao[i].className = botao[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
