@@ -17,13 +17,13 @@
 <section class="areaGeral">
 
     <div class="logo">
-    <a href="./index.html">
+    <a href="./index.php">
         <img src="./src/img/Design_sem_nome-removebg-preview (2).png" alt="logo da pizzaria">
     </a>
     </div>
 
     <section class="homebutton">
-        <a href="./index.html">
+        <a href="./index.php">
         <i class="bi bi-house-door-fill"></i>
         </a>
     </section>
